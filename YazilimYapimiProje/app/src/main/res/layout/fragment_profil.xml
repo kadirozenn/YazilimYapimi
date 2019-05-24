@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.FragmentProfil">
+
+    <ProgressBar
+        android:id="@+id/Fragment_Profil_Progres"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07999998" />
+
+    <EditText
+        android:id="@+id/Fragment_Profil_Year"
+        style="@style/LoginRegisterEditText"
+        android:background="@drawable/et_bg_profil"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:textColor="#000"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Fragment_Profil_Progres"
+        app:layout_constraintVertical_bias="0.22000003" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Yıl"
+        android:textColor="#000"
+       style="@style/LoginRegisterTextView"
+        app:layout_constraintBottom_toTopOf="@+id/Fragment_Profil_Year"
+        app:layout_constraintEnd_toEndOf="@+id/Fragment_Profil_Year"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Fragment_Profil_Year" />
+
+    <Spinner
+        android:id="@+id/Fragment_Profil_Spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/Fragment_Profil_Year"
+        app:layout_constraintStart_toStartOf="@+id/Fragment_Profil_Year"
+        app:layout_constraintTop_toBottomOf="@+id/Fragment_Profil_Year" />
+
+    <Button
+        android:id="@+id/Fragment_Profil_Btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Göster"
+        android:textColor="#000"
+        android:textAllCaps="false"
+        android:background="@drawable/et_bg_profil"
+        app:layout_constraintEnd_toEndOf="@+id/Fragment_Profil_Check"
+        app:layout_constraintStart_toStartOf="@+id/Fragment_Profil_Check"
+        app:layout_constraintTop_toBottomOf="@+id/Fragment_Profil_Check" />
+
+    <CheckBox
+        android:id="@+id/Fragment_Profil_Check"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Ay"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="@+id/Fragment_Profil_Spinner"
+        app:layout_constraintStart_toStartOf="@+id/Fragment_Profil_Spinner"
+        app:layout_constraintTop_toTopOf="@+id/Fragment_Profil_Spinner" />
+
+    <Button
+        android:id="@+id/Fragment_Profil_BtnCkisi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Çıkış"
+        android:textColor="#000"
+        android:textAllCaps="false"
+        android:background="@drawable/et_bg_profil"
+        app:layout_constraintEnd_toEndOf="@+id/Fragment_Profil_Btn"
+        app:layout_constraintStart_toStartOf="@+id/Fragment_Profil_Btn"
+        app:layout_constraintTop_toBottomOf="@+id/Fragment_Profil_Btn" />
+
+    <TextView
+        android:id="@+id/Fragment_Profil_Counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/Fragment_Profil_Progres"
+        app:layout_constraintStart_toStartOf="@+id/Fragment_Profil_Progres"
+        app:layout_constraintTop_toBottomOf="@+id/Fragment_Profil_Progres" />
+
+</android.support.constraint.ConstraintLayout>
