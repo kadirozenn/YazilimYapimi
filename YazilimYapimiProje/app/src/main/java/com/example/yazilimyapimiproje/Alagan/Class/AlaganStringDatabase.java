@@ -50,7 +50,7 @@ public class AlaganStringDatabase
         RequestQueue requestQueue = Volley.newRequestQueue(main);
 
 
-        StringRequest myReq = new StringRequest(Request.Method.POST, "http://192.168.3.227/yazilimyapimiproje/MainController.php", new Response.Listener<String>() {
+        StringRequest myReq = new StringRequest(Request.Method.POST, "", new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 listener.onResponse(response);
